@@ -1,0 +1,31 @@
+.login-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+.input {
+  width: 80%;
+}
+.full-width {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  width: 100%;
+}
+.social-buttons button {
+  margin-top: 10px;
+  width: 80%;
+}
+.social-buttons button fa-icon {
+  margin-right: 5px;
+}
+.switch-link {
+  margin-top: 20px;
+}
