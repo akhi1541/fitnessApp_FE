@@ -19,7 +19,7 @@
 
   width: 100%;
 }
-.social-buttons button {
+.social-buttons a {
   margin-top: 10px;
   width: 80%;
 }

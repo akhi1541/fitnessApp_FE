@@ -1,24 +1,52 @@
 <div class="login-container">
   <h2>Login</h2>
-  <form>
+  <form #loginData="ngForm"  (ngSubmit)="loginForm(loginData)">
     <mat-form-field class="input">
-      <input matInput placeholder="Email" type="email" />
+      <input matInput ngModel name="email" placeholder="Email" type="email" />
     </mat-form-field>
     <mat-form-field class="input">
-      <input matInput placeholder="Password" type="password" />
+      <input ngModel name="password" matInput placeholder="Password" type="password" />
     </mat-form-field>
     <div class="loginBtn">
       <button mat-raised-button color="primary">Login</button>
     </div>
     <div class="social-buttons">
-      <button mat-raised-button color="primary" (click)="googleLogin()" class="full-width">
+      <a
+        mat-raised-button
+        color="primary"
+        class="full-width"
+        href="{{ googleUrl }}"
+      >
         <fa-icon class="fab fa-google mr-1" [icon]="googleIcon"></fa-icon>
-        <span> Sign in with Google</span>
-      </button>
-      <button mat-raised-button color="primary" class="full-width">
+        Sign in with Google</a
+      >
+      <a
+        mat-raised-button
+        color="primary"
+        class="full-width"
+        href="{{ facebookUrl }}"
+      >
         <fa-icon class="fab fa-facebook mr-1" [icon]="facebookIcon"></fa-icon>
-        <span> Sign in with Facebook</span>
-      </button>
+        Sign in with Facebook</a
+      >
+      <a
+        mat-raised-button
+        color="primary"
+        class="full-width"
+        href="{{ googleUrl }}"
+      >
+        <fa-icon class="fab fa-google mr-1" [icon]="appleIcon"></fa-icon>
+        Sign in with Apple</a
+      >
+      <a
+        mat-raised-button
+        color="primary"
+        class="full-width"
+        href="{{ facebookUrl }}"
+      >
+        <fa-icon class="fab fa-facebook mr-1" [icon]="twitterIcon"></fa-icon>
+        Sign in with Twitter</a
+      >
     </div>
   </form>
   <p class="switch-link">
